@@ -13,17 +13,17 @@ I intend to further use time boxing and set aside a short period of time every m
 3. I was successfully able to use all of the base commands.  I haven't yet built fluency with all of the different options to the various commands.
 4. I think the most important commands to know are those that let you move around your system and edit/execute files.  A short list would be cd, pwd, ls -l, vi <filename>, ./<executable>.
 5. Various commands and what they do:
-* pwd - prints out the path of your current working directory.  You generally use this command to remind yourself where you are in the system (mostly to get the full path in a format you can pipe or copy since most people have the current working directory in their prompt).
-* ls - Lists out the files in the current working directory.  There are some very useful options to this command.  The option "-l" gives you important information about the files/directories in your current directory, including things like permissions and last-access time.  You can also view "hidden" files with "ls -a" to view things like your .bash_profile.  You are also able to pass in a given directory so that you do not have to move into a directory with "cd" first.
-* mv - Allows you to move a file to another location or to a new name.  Note that this is different from the "cp" command, which also keeps your initial file.  
-* cd - This lets you change your directory to a directory of your choosing.
+  * pwd - prints out the path of your current working directory.  You generally use this command to remind yourself where you are in the system (mostly to get the full path in a format you can pipe or copy since most people have the current working directory in their prompt).
+  * ls - Lists out the files in the current working directory.  There are some very useful options to this command.  The option "-l" gives you important information about the files/directories in your current directory, including things like permissions and last-access time.  You can also view "hidden" files with "ls -a" to view things like your .bash_profile.  You are also able to pass in a given directory so that you do not have to move into a directory with "cd" first.
+  * mv - Allows you to move a file to another location or to a new name.  Note that this is different from the "cp" command, which also keeps your initial file.  
+  * cd - This lets you change your directory to a directory of your choosing.
 ../ - This represents the directory "above" your current directory.  If you were in /users/kevin/test you could type "cd .." or "cd ../" and go up to the directory "/users/kevin".
-* touch - This command allows you to create a new file for editing.  It can also update the last modification times of an existing file.
-* mkdir - This command allows you to make a new directory.  Some useful options, like -p, will allow you to create a chain of directories that may not already exist.
-* less - This allows you to view a file one page at a time.
-* rmdir - This command allows you to remove a directory.  Useful for cleaning up directory structures that you no longer need.
-* rm - This command allows you to remove files.  The useful (but DANGEROUS) option -r allows you to remove files recursively which can allow you to delete entire directory trees with a single command.
-* help - displays help information for the given command.
+  * touch - This command allows you to create a new file for editing.  It can also update the last modification times of an existing file.
+  * mkdir - This command allows you to make a new directory.  Some useful options, like -p, will allow you to create a chain of directories that may not already exist.
+  * less - This allows you to view a file one page at a time.
+  * rmdir - This command allows you to remove a directory.  Useful for cleaning up directory structures that you no longer need.
+  * rm - This command allows you to remove files.  The useful (but DANGEROUS) option -r allows you to remove files recursively which can allow you to delete entire directory trees with a single command.
+  * help - displays help information for the given command.
 
 # 1.4 Forking and Cloning Reflection
 To create a new repository, simply go to github and click on the "Create new...">"New Repository" button near the top right of the screen.  Once you have located a repo that you would like to fork, you can simply click on the "fork" button to create a fork of the repo.  You can find the HTTPS clone url on that page.  Grab a copy of the url and enter "git clone <url>" at the command line in order to clone the repo.  You could also clone the repository from the GitHub GUI tool if you so choose.  The advantage of forking a repository is so that you can have your own personal version of the repository that you can work on and make updates to.  You can also send a request to update the main repository via a pull request.  
