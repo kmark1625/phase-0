@@ -8,5 +8,21 @@ Time boxing is setting aside a static amount of time to achieve a given goal and
 I intend to further use time boxing and set aside a short period of time every morning and evening to due some quick meditation.  I will use this in conjunction with the pomodoro method to determine whether this has a positive effect on my productivity and mood.  I will also have a greater emphasis on explicitly writing out tasks to accomplish and giving myself a set amount of pomodoros to complete the task.  I will then review my progress at the end of the session.  My hope is that this will give me increased focus during the fixed timebox and allow me to complete more work.  My overall plan is to give myself a set number of hours to complete phase 0 material and try to achieve my goals each week.  
 
 # 1.2 The Command Line Reflection
+1. A shell is a command-line interpreter and is an interface to the system in question.  Bash is the "Bourne Again Shell", which is just one of many command-line interpreters.  Bash has a compilation of features from other shells such as sh, csh, and ksh.
+2. The most challenging piece going through this material was learning some of the more advanced features of unix and using them coherently.  Piping, regular expressions, and scripting sounds simple at the outset but it takes a lot of practice to get it down fluently.  Similarly, keyboard shortcuts (such as use of vi commands at the shell prompt) are hard to get used to.
+3. I was successfully able to use all of the base commands.  I haven't yet built fluency with all of the different options to the various commands.
+4. I think the most important commands to know are those that let you move around your system and edit/execute files.  A short list would be cd, pwd, ls -l, vi <filename>, ./<executable>.
+5. Various commands and what they do:
+* pwd - prints out the path of your current working directory.  You generally use this command to remind yourself where you are in the system (mostly to get the full path in a format you can pipe or copy since most people have the current working directory in their prompt).
+* ls - Lists out the files in the current working directory.  There are some very useful options to this command.  The option "-l" gives you important information about the files/directories in your current directory, including things like permissions and last-access time.  You can also view "hidden" files with "ls -a" to view things like your .bash_profile.  You are also able to pass in a given directory so that you do not have to move into a directory with "cd" first.
+* mv - Allows you to move a file to another location or to a new name.  Note that this is different from the "cp" command, which also keeps your initial file.  
+* cd - This lets you change your directory to a directory of your choosing.
+../ - This represents the directory "above" your current directory.  If you were in /users/kevin/test you could type "cd .." or "cd ../" and go up to the directory "/users/kevin".
+* touch - This command allows you to create a new file for editing.  It can also update the last modification times of an existing file.
+* mkdir - This command allows you to make a new directory.  Some useful options, like -p, will allow you to create a chain of directories that may not already exist.
+* less - This allows you to view a file one page at a time.
+* rmdir - This command allows you to remove a directory.  Useful for cleaning up directory structures that you no longer need.
+* rm - This command allows you to remove files.  The useful (but DANGEROUS) option -r allows you to remove files recursively which can allow you to delete entire directory trees with a single command.
+* help - displays help information for the given command.
 
 # 1.4 Forking and Cloning Reflection
