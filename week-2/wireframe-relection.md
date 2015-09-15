@@ -1,7 +1,7 @@
 # Wireframe of index.html:
-![Wireframe Index](/imgs/wireframe-index)
+![Wireframe Index](imgs/wireframe-index)
 # Wireframe of blog/index.html:
-![Blog Wireframe](/imgs/wireframe-blog-index)
+![Blog Wireframe](imgs/wireframe-blog-index)
 # Reflection
 * **What is a wireframe?**
 	* A wireframe is a blueprint of your web site.  This allows you to layout the content of your web page in order to determine where all of the content will be placed.  This is also an opportunity for you to determine how the user will interact with the web page.  You can place content areas on the wireframe as well as links,  buttons, or images.  
