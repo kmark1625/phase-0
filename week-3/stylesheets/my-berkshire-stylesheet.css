@@ -1,0 +1,17 @@
+html {
+  background-color: #ffffff;
+  color: #000080;
+}
+a {
+  color: #800080;
+}
+a:visited {
+  color: #ff0000;
+}
+.table-add {
+  font-size: 12px;
+}
+tr {
+  width: 400px;
+  height: 40px;
+}
