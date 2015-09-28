@@ -27,3 +27,11 @@ puts "How about the bigger, better number of " + better.to_s + "?"
 * What was confusing about the material? What made sense?
     Having to convert integer/floats to strings for output was confusing at first. This is different than in Python (a language I've had experience with) where numbers are automatically converted to strings in the proper context.
 =end
+
+=begin
+Links to exercises
+  Exercise 4.3.1: Return a Formatted Address
+    https://github.com/kmark1625/phase-0/blob/master/week-4/address/my_solution.rb
+  Exercise 4.3.2: Defining Math Methods
+    https://github.com/kmark1625/phase-0/blob/master/week-4/math/my_solution.rb
+=end
