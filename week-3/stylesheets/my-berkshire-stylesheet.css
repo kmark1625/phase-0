@@ -1,5 +1,6 @@
 /*
- * What is important to know when linking an external file (like a stylesheet) to an HTML file?
+ * What is important to know when linking an external file (like a stylesheet) to an
+ HTML file?
     When linking an external file it is important to know the relative path of the
     file you want to link as well as the appropriate syntax to link a file. The syntax
     needed in the html document is <link rel="stylesheet" type="text/css" href=<
@@ -9,13 +10,15 @@
     I used the color, width, height, font-size, margin, and background-color elements
     in order to style the page.  This allowed me to control how the various content
     areas looked as well as where they were placed on the page..
- * Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+ * Did you modify the HTML to include classes or ids? If so, which did you choose and
+ why? If you didn't, how would you know which one to add to your HTML?
     The HTML page i was using already had some classes built-in to be used to style
     the various sections of the page.  I used a fair amount of classes and ids to
     style various elements in the different sections.  If I spent more time on it, I
     would likely have commonalities in font-types across the various elements and be
     smarter about where I assigned properties.
- * When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+ * When you compared your site to the actual code base, which do you think had cleaner
+ code that followed best practices and why?
     I think there are trade-offs to both methods and I'm not sure yet what is the
     accepted best-practice in the industry.  I like how my implementation has plenty
     of <div> elements with classes/ids.  This makes the code more modular when
