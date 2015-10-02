@@ -1,6 +1,6 @@
 # Calculate a Grade
 
-# I worked on this challenge by myself.
+# I worked on this challenge with Parminder Singh.
 
 
 # Your Solution Below

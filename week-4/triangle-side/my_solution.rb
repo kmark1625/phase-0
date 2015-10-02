@@ -1,14 +1,15 @@
-# I worked on this challenge by myself.
+# I worked on this challenge with Parminder Singh.
 
 
 # Your Solution Below
-
 def valid_triangle?(a, b, c)
   # Your code goes here!
-  # Using the Triangle inequality theorem
-  if a+b>c and a+c>b and b+c>a
-    return true
-  else
+  if a + b < c || a + c < b || b + c < a
     return false
+  elsif a == 0 || b == 0 || c==0
+    return false
+  else
+    return true
   end
 end
+

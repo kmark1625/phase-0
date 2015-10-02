@@ -1,6 +1,6 @@
 # Good Guess
 
-# I worked on this challenge by myself.
+# I worked on this challenge by Parminder Singh.
 
 
 # Your Solution Below
