@@ -1,0 +1,38 @@
+body{
+font-family:verdana;
+}
+
+header h1{
+    background-color:blue;
+    color:white;
+    font-family: verdana;
+    padding: 1em;
+    margin:0;
+}
+header p{
+    background-color:grey;
+    padding:2em;
+     margin:0
+
+}
+.column-1{
+    width:50%;
+    float:left;
+    margin-bottom: 2em;
+}
+
+.column-2{
+   float:left;
+    padding-left:1em;
+    width: 45%;
+
+}
+footer{
+    clear: both;
+    width:100%;
+}
+
+details{
+    background-color:grey;
+
+}
