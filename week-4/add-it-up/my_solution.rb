@@ -4,7 +4,7 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
 
-# I worked on this challenge by myself.
+# I worked on this challenge by Jessie Richardson..
 
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!
@@ -58,7 +58,5 @@ end
 
 # 6. sentence_maker refactored solution
 def sentence_maker(array_of_strings)
-  result = array_of_strings.join(" ")
-  result += "."
-  return result.capitalize!
+  return array_of_strings.join(" ").capitalize + '.'
 end
