@@ -7,12 +7,13 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.select { |x| x.to_s.include?(thing_to_find) }
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.select { |k,v| v == thing_to_find}.keys
 end
+
 
 # Identify and describe the Ruby method(s) you implemented.
 #
@@ -21,7 +22,7 @@ end
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.map! { |x| (x.is_a?(Integer) ? x + thing_to_modify : x) }
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
@@ -36,12 +37,14 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.sort {|x,y| x.to_s <=> y.to_s }
 end
 
 def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.to_a.sort { |x,y| x[0] <=> y[0] }
 end
+
+print my_hash_sorting_method(my_family_pets_ages)
 
 # Identify and describe the Ruby method(s) you implemented.
 #
@@ -88,7 +91,6 @@ end
 
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
-#
 #
 #
 #
