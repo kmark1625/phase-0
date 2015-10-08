@@ -1,19 +1,18 @@
 # Research Methods
 
-# I spent [] hours on this challenge.
+# I spent 1 hours on this challenge.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  source.select { |x| x.to_s.include?(thing_to_find) }
+  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source.select { |k,v| v == thing_to_find}.keys
+  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
-
 
 # Identify and describe the Ruby method(s) you implemented.
 #
@@ -22,7 +21,7 @@ end
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
-  source.map! { |x| (x.is_a?(Integer) ? x + thing_to_modify : x) }
+  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
@@ -44,12 +43,17 @@ def my_hash_sorting_method(source)
   source.to_a.sort { |x,y| x[1] <=> y[1] }
 end
 
-print my_hash_sorting_method(my_family_pets_ages)
-
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+=begin
+- I implemented the array and hash sorting methods using an Enumerable method called
+  sort. This allows you to sort an Enumerable using your own comparison given in the
+  form of a code block. For the array, I sorted based on the string values. For the
+  hash, I sorted based on the hash values.
+- You can use this method by calling sort on an Enumerable and then passing in the
+  block of code for the comparison method.
+- One trick I use for deciphering the Ruby document is to figure out exactly what I
+  want the command I'm looking for to do. This makes it easier for me to search for the appropriate command in the documentation.
+=end
 
 
 # Person 4
@@ -91,6 +95,7 @@ end
 
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
+#
 #
 #
 #
