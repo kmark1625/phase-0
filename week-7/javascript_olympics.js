@@ -1,37 +1,8 @@
  // JavaScript Olympics
 
-// I paired with  on this challenge.
+// I paired with Mark Janzer on this challenge.
 
-// This challenge took me [#] hours.
-
-
-// Warm Up
-
-
-
-
-// Bulk Up
-
-
-
-
-// Jumble your words
-
-
-
-
-// 2,4,6,8
-
-
-
-
-// "We built this city"
-
-
-
-
-// Reflection
-
+// This challenge took me 1 hour.
 
 // Release 1
 // Create a function that takes an array of athletes that include a name and event property. (Sarah Hughes (Links to an external site.), for example, could have "Ladies' Singles" as her event). Your function should add a  win property to each athlete in the array. In the example above,  win would print "Sarah Hughes won the Ladies' Singles!"
@@ -119,7 +90,10 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 // Reflection
 /*
 * What JavaScript knowledge did you solidify in this challenge?
-  ** This challenge helped to solidify my knowledge
+  ** I solidified my knowledge of creating new objects with both literal
+  notation and object notation.
 * What are constructor functions?
+  ** Constructor functions allow you to create a new object with some default properties and functions.
 * How are constructors different from Ruby classes (in your research)?
+  ** Constructors are analogous to the initialize function in Ruby. They are different because you are able to also define functions in the constructor.
 */
