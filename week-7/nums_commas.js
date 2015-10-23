@@ -46,12 +46,19 @@ separateComma(1234567);
 /*
 * What was it like to approach the problem from the perspective of JavaScript?
 Did you approach the problem differently?
-  ** It was very similar to approaching the problem with Ruby.  We made use of some built in methods of JavaScript and were able to come up with a really clean refactored solution with the help of the toLocaleString method.
+  ** It was very similar to approaching the problem with Ruby.  We made use of
+  some built in methods of JavaScript and were able to come up with a really
+  clean refactored solution with the help of the toLocaleString method.
 * What did you learn about iterating over arrays in JavaScript?
-  ** Iterating over arrays in JavaScript is very similar to iterating over arrays in Ruby when using index notation. It appears that JavaScript also implements a version of Enumerable but we made heavy use of the index notation for arrays to iterate.
+  ** Iterating over arrays in JavaScript is very similar to iterating over
+  arrays in Ruby when using index notation. It appears that JavaScript also
+  implements a version of Enumerable but we made heavy use of the index
+  notation for arrays to iterate.
 * What was different about solving this problem in JavaScript?
-  ** This problem was very similar to solving the problem in Ruby. The main difference was the syntax of JavaScript vs Ruby.
+  ** This problem was very similar to solving the problem in Ruby. The main
+  difference was the syntax of JavaScript vs Ruby.
 * What built-in methods did you find to incorporate in your refactored
 solution?
-  ** We incorperated the toLocaleString method. One thing to note is that this does not work in node but does work appropriately in modern browsers.
+  ** We incorperated the toLocaleString method. One thing to note is that this
+  does not work in node but does work appropriately in modern browsers.
 */
