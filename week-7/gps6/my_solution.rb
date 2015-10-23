@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge with Issac Lee.
+# We spent 1 hour on this challenge.
 
 # EXPLANATION OF require_relative
 # Require and require_relative refer to a specific file that you would also like this file to access.
@@ -100,14 +100,20 @@ alaska.virus_effects
 =begin
 * What are the differences between the two different hash syntaxes shown
 in the state_data file?
-  ** One of the syntax uses symbols while the other does not. Symbols insure uniqueness, however, they also take up more space in memory. As there are 50 space, it's possible that this was the reason a symbol was not used.
+  ** One of the syntax uses symbols while the other does not. Symbols insure
+  uniqueness, however, they also take up more space in memory. As there are
+  50 space, it's possible that this was the reason a symbol was not used.
 * What does require_relative do? How is it different from require?
-  **
+  ** Require_relative is similar to require but allows the use of a relative
+  path instead of an absolute path.
 * What are some ways to iterate through a hash?
-  **
+  ** You can iterate through the keys or values with a for-each loop. You can also make use of hash methods to do so as well.
 * When refactoring virus_effects, what stood out to you about the
 variables, if anything?
-  **
+  ** It stood out that the instance variables were being used as parameters.
+  This wasn't necessary as you can access instance variables from within a
+  function.
 * What concept did you most solidify in this challenge?
-  **
+  ** I solidified working with hashes and when to use classes to encapsulate
+  code.
 =end
