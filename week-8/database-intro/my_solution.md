@@ -1,13 +1,18 @@
 # Exercises
 *  1. Select all data for all states.
+
 '''
 SELECT * FROM states;
 '''
+
 * 2. Select all data for all regions.
+
 '''
 SELECT * from regions;
 '''
+
 * 3. Select the state_name and population for all states.
+
 '''
 SELECT state_name, population
 FROM states;
