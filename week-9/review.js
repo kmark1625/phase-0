@@ -1,4 +1,4 @@
-// Assignment 6.7 in JavaScript
+// Assignment 6.7 in JavaScript (9.2.2)
 // Validate Credit Card
 
 // Pseudo-Code
@@ -102,8 +102,8 @@ function check_card(credit_card_number) {
 }
 
 
-// Valid Card should return true
-console.log(check_card(4563960122001999));
+// Driver Code to validate credit card
+// console.log(check_card(4563960122001999));
 
 // Review
 /*
@@ -129,3 +129,90 @@ console.log(check_card(4563960122001999));
   centered around applying the same algorithm to the credit card number.  As a
   result, it had many of the same steps to solve the problem.
 */
+
+// Assignment 9.2.1 JavaScript Grocery List
+// Pesudo-Code
+// Strategy: I'm choosing to have an object represent my list. I'm creating an object inside of the grocery list to carry each of the items similar to a hash, where each property is an item name and the value is the quantity. This makes for easy addition and removal of items.
+/*
+Create an object to represent a list.
+Set a property of the list object to be an array.
+Give a method to an add an item to the array.
+Give a method to remove an item (via name) to the array.
+Give a method to update the quantity of items
+Give a method to print out the items in the array.
+*/
+var grocery_list = {
+  items: {},
+  addItem: function(name, quantity) {
+    this.items[name] = quantity;
+  },
+  removeItem: function(name) {
+    delete this.items[name];
+  },
+  updateQuantity: function(name, quantity) {
+    this.items[name] = quantity;
+  },
+  printItems: function() {
+    for (var item in this.items) {
+      console.log("Item: " + item + " Quantity: " + this.items[item]);
+    }
+  }
+}
+
+
+// Refactored solution
+var grocery_list = {
+  items: {},
+
+  addItem: function(name, quantity) {
+    this.items[name] = quantity;
+  },
+
+  removeItem: function(name) {
+    if (this.items.hasOwnProperty(name)) {
+      delete this.items[name];
+    } else {
+      console.log(name + " is not currently on the grocery list.");
+    }
+  },
+
+  updateQuantity: function(name, quantity) {
+    if (this.items.hasOwnProperty(name)) {
+      this.items[name] = quantity;
+    } else {
+      console.log(name + " is not currently on the grocery list.");
+    }
+  },
+
+  printItems: function() {
+    for (var item in this.items) {
+      console.log("Item: " + item + ". Quantity: " + this.items[item] + ".");
+    }
+  }
+}
+
+
+// Driver Code
+grocery_list.addItem("ipod", 30);
+grocery_list.addItem("watch", 20);
+console.log(grocery_list.items.ipod);
+console.log(grocery_list.items.watch);
+grocery_list.removeItem("ipod");
+console.log(grocery_list.items.ipod);
+grocery_list.updateQuantity("watch", 40);
+console.log(grocery_list.items.watch);
+grocery_list.printItems();
+grocery_list.removeItem("Dinosaur");
+
+// Reflect
+/*
+* What concepts did you solidify in working on this challenge? (reviewing the
+passing of information, objects, constructors, etc.)
+  * I solidified my understanding of JavaScript objects. My first attempt at a solution used an array of objects to store items.  I found that it was difficult to work with because deletion left a sparse array and pop would only allow me to return the very last value.
+* What was the most difficult part of this challenge?
+  * The most difficult part of this challenge was to determine the appropriate data structure to contain the grocery list. My knowledge of these structures in JavaScript was not very strong so it was not immediately obvious to me that an object would prove much superior.
+* Did an array or object make more sense to use and why?
+  * An object made more sense to use in this case because we were only concerned about the quantity of the item.  If we had to deal with a large amount of other properties, nested objects might start to get convoluted.
+*/
+
+
